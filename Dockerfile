@@ -14,7 +14,7 @@ RUN \
   wget https://storage.googleapis.com/golang/go$GOLANG_VERSION.$GOLANG_OS-$GOLANG_ARCH.tar.gz && \
   tar -xzf go$GOLANG_VERSION.$GOLANG_OS-$GOLANG_ARCH.tar.gz && \
   mkdir -p workspace/src && \
-  apt-get remove -y wget vim git && \
+  apt-get remove -y wget && \
   apt-get clean && \
   rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* go$GOLANG_VERSION.$GOLANG_OS-$GOLANG_ARCH.tar.gz
 
